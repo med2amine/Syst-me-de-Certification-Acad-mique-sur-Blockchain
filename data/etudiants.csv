@@ -1,0 +1,13 @@
+studentName,studentId,diplomaTitle,issueDate,recipientAddress,grade
+Amina Benali,2023-INF-042,Licence Informatique,2026-06-15,0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266,Mention Bien
+Youssef El Amrani,2023-INF-043,Licence Informatique,2026-06-15,0x70997970C51812dc3A010C7d01b50e0d17dc79C8,Mention Très Bien
+Salma Idrissi,2023-INF-044,Licence Informatique,2026-06-15,0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC,Mention Assez Bien
+Omar Tazi,2023-INF-045,Licence Informatique,2026-06-15,,Passable
+Khadija Alaoui,2023-INF-046,Licence Informatique,2026-06-15,0x90F79bf6EB2c4f870365E785982E1f101E93b906,Mention Bien
+Hamza Chraibi,2023-MAT-011,Licence Mathématiques,2026-06-16,,Mention Assez Bien
+Nora Berrada,2023-MAT-012,Licence Mathématiques,2026-06-16,0x15d34AAf54267DB7D7c367839AAf71A00a2C6A65,Mention Très Bien
+Anas Lahlou,2023-PHY-007,Licence Physique,2026-06-17,,Passable
+Imane Fassi,2023-PHY-008,Licence Physique,2026-06-17,,Mention Bien
+Reda Mansouri,2022-INF-101,Master Intelligence Artificielle,2026-06-20,,Mention Très Bien
+Sara Kettani,2022-INF-102,Master Intelligence Artificielle,2026-06-20,,Mention Bien
+Mehdi Bennani,2022-INF-103,Master Intelligence Artificielle,2026-06-20,,Mention Assez Bien
