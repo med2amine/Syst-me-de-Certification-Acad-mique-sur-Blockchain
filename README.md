@@ -4,7 +4,7 @@
 
 **Author:** _Your name_ · **Course:** _Course name_ · **Date:** _Date_
 
-**Deployed contract (Sepolia):** `0x…` (_fill in after deployment_) · [Etherscan](https://sepolia.etherscan.io/address/0x…)
+**Deployed contract (Sepolia):** `0xC71CcDfb2B5274822C92fbF94023CdB0b7A16a94` · [View on Etherscan](https://sepolia.etherscan.io/address/0xC71CcDfb2B5274822C92fbF94023CdB0b7A16a94)
 
 ---
 
@@ -226,15 +226,46 @@ Additionally, the Excel parser was checked against the three sample files (valid
 
 ## 7. Screenshots
 
-_Add your own captures in `docs/screenshots/` and reference them here:_
+> The contract is deployed on **Sepolia** (address above). The mint, batch and verification captures below were taken while running the same contract code on the **local Hardhat network** (contract `0x5FbDB2315678afecb367f032d93F642f64180aa3`), which the assignment allows ("local ou Sepolia").
 
-| | |
-|---|---|
-| Successful single mint (hash visible) | `![mint](docs/screenshots/mint.png)` |
-| Excel preview with validation | `![preview](docs/screenshots/preview.png)` |
-| Batch mint result | `![batch](docs/screenshots/batch.png)` |
-| Public verification | `![verify](docs/screenshots/verify.png)` |
-| Contract on Etherscan | `![etherscan](docs/screenshots/etherscan.png)` |
+### 7.1 Automated tests: 15 passing
+![Hardhat tests](docs/screenshots/tests.png)
+
+### 7.2 Deployment on Sepolia
+Deployment from the terminal (chain id 11155111), then the contract page on Etherscan.
+
+![Deployment on Sepolia](docs/screenshots/deploy-sepolia.png)
+![Contract on Sepolia Etherscan](docs/screenshots/etherscan.png)
+
+### 7.3 Successful single mint
+Certificate #1 issued from the admin form, with the transaction hash displayed.
+
+![Successful mint](docs/screenshots/mint.png)
+
+### 7.4 Public verification
+Certificate #1 read from the blockchain in the public zone, with its **Valid** status.
+
+![Public verification](docs/screenshots/verify.png)
+
+### 7.5 Excel import: preview and row selection
+The 12 students of `data/etudiants.xlsx` are parsed in the browser, validated and pre-selected.
+
+![Excel preview](docs/screenshots/preview.png)
+
+### 7.6 Excel import: client-side validation
+`data/etudiants_invalid_demo.xlsx` contains deliberate errors. Before any transaction, the app flags a wrong date format, a missing name, an invalid wallet address and a duplicate inside the file. Only the valid row can be selected and issued.
+
+![Validation errors](docs/screenshots/validation.png)
+
+### 7.7 Batch mint
+12 certificates issued in two transactions (10 + 2), with their hashes and the certificate numbers created (#2 to #13).
+
+![Batch mint](docs/screenshots/batch.png)
+
+### 7.8 Duplicate protection
+Importing the same file again: every row is detected as already registered on-chain and cannot be selected, so no gas is wasted.
+
+![Duplicate detection](docs/screenshots/duplicate.png)
 
 ## 8. Limitations and possible improvements
 
@@ -251,5 +282,5 @@ _Add your own captures in `docs/screenshots/` and reference them here:_
 - [x] `frontend/`
 - [x] Sample Excel file (`data/etudiants.xlsx`)
 - [x] README (installation, deployment, usage)
-- [ ] Deployed contract address (local or Sepolia): _fill in at the top_
-- [ ] Screenshot of a successful mint: _add to `docs/screenshots/`_
+- [x] Deployed contract address: Sepolia `0xC71CcDfb2B5274822C92fbF94023CdB0b7A16a94`
+- [x] Screenshot of a successful mint: section 7.3
